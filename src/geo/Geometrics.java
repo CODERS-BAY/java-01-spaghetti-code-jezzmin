@@ -36,27 +36,23 @@ public class Geometrics {
     }
 
     public static double multiply(double length, double width) {
-        double area = length * width;
-        return area;
+        return length * width;
     }
 
     public static double addition(double length, double width) {
-        double area = length + width;
-        return area;
+        return length + width;
+
     }
 
     public static double zoneOfSphere(double height, double radius, double x) {
-        double v = (Math.PI * height * (3 * Math.pow(radius, 2) + 3 * Math.pow(x, 2) + Math.pow(height, 2))) / 6;
-        return v;
+        return (Math.PI * height * (3 * Math.pow(radius, 2) + 3 * Math.pow(x, 2) + Math.pow(height, 2))) / 6;
     }
 
     public static double sphereWithCylinder(double height, double radius) {
-        double cylinder = Math.PI * Math.pow(height, radius) / 6;
-        return cylinder;
+        return Math.PI * Math.pow(height, radius) / 6;
     }
 
     public static double ungula(double length, double radius) {
-        double ungula = 2 * length * radius / 3;
-        return ungula;
+        return 2 * length * radius / 3;
     }
 }
